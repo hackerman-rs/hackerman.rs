@@ -6,6 +6,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 	return <>
 		<Head>
 			<title>hackermans &#x01F60E;</title>
+			<link rel="icon" href="/hackermans.png" />
 		</Head>
 		<Component {...pageProps} />
 	</>;
