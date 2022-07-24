@@ -78,6 +78,10 @@ const people = [{
 	name: "violet",
 	color: "#ffaaff",
 	website: "https://viomck.com/"
+}, {
+        name: "matt",
+        color: "#44eafc",
+        website: "https://bentley.pictures/"
 }];
 
 const Home: NextPage = () => {
