@@ -76,7 +76,7 @@ const people = [{
 	website: "https://penple.dev/"
 }, {
 	name: "violet",
-	color: "#e8bac6",
+	color: "#fda1ef",
 	website: "https://violet.wtf/"
 }];
 
