@@ -92,7 +92,13 @@ const Home: NextPage = () => {
 
 	return (
 		<Main>
-			<a style={{ textDecoration: 'none' }} href="https://twitter.com/unicode/status/1551714029436936192"><Amogus>ඞ</Amogus></a>
+			<a
+				target="_blank"
+				style={{ textDecoration: 'none' }}
+				href="https://twitter.com/unicode/status/1551714029436936192"
+			>
+				<Amogus>ඞ</Amogus>
+			</a>
 
 			<Subtitle>
 				we are hackermans
