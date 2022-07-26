@@ -21,6 +21,7 @@ const animatedBg = keyframes`
 `
 
 const Amogus = styled.h1`
+	margin-top: 0;
 	margin-bottom: 0;
 	color: transparent;
 	animation: ${animatedBg} 1s linear infinite;
@@ -91,7 +92,7 @@ const Home: NextPage = () => {
 
 	return (
 		<Main>
-			<Amogus>ඞ</Amogus>
+			<a style={{ textDecoration: 'none' }} href="https://twitter.com/unicode/status/1551714029436936192"><Amogus>ඞ</Amogus></a>
 
 			<Subtitle>
 				we are hackermans
