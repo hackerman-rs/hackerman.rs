@@ -18,7 +18,7 @@ const animatedBg = keyframes`
 	100% {
 		background-position: 200% 0%;
 	}
-`
+`;
 
 const Amogus = styled.h1`
 	margin-top: 0;
@@ -64,7 +64,7 @@ const Li = styled.li`
 const Link = styled.a`
 	color: #ef4444;
 	text-decoration: underline wavy;
-`
+`;
 
 // be sure to add yourself here
 const people = [{
@@ -85,17 +85,19 @@ const Home: NextPage = () => {
 	const pages = people.map(p => (
 		<Li key={p.name}>
 			<NextLink href={p.website} passHref>
-				<Link style={{color: p.color}}>{p.name}</Link>
+				<Link style={{ color: p.color }}>{p.name}</Link>
 			</NextLink>
 		</Li>
 	));
 
 	return (
 		<Main>
+			{/* eslint-disable-next-line react/jsx-no-target-blank */}
 			<a
 				target="_blank"
 				style={{ textDecoration: 'none' }}
 				href="https://twitter.com/unicode/status/1551714029436936192"
+				rel="noopener"
 			>
 				<Amogus>ඞ</Amogus>
 			</a>
