@@ -50,6 +50,15 @@ const Subtitle = styled.h3`
 	margin-bottom: 25px;
 `;
 
+const Footer = styled.p`
+	margin-top: 25px;
+`;
+
+const FooterLink = styled.a`
+	color: #ffffff;
+	text-decoration: underline;
+`;
+
 const Ul = styled.ul`
 	display: flex;
 	flex-direction: column;
@@ -69,7 +78,7 @@ const Link = styled.a`
 // be sure to add yourself here
 const people = [{
 	name: "dean",
-	color: "#eb741a",
+	color: "#ef7d0d",
 	website: "https://dbassett.dev/"
 }, {
 	name: "penple",
@@ -79,6 +88,10 @@ const people = [{
 	name: "violet",
 	color: "#ffaaff",
 	website: "https://viomck.com/"
+}, {
+	name: "pato",
+	color: "#38fedc",
+	website: "https://pato.gay/"
 }];
 
 const Home: NextPage = () => {
@@ -109,6 +122,13 @@ const Home: NextPage = () => {
 			<Ul role="list">
 				{pages}
 			</Ul>
+
+			<Footer>
+				sussy code at{' '}
+				<NextLink href="https://github.com/hackerman-rs/hackerman.rs" passHref>
+					<FooterLink>github</FooterLink>
+				</NextLink>
+			</Footer>
 
 		</Main>
 	);
