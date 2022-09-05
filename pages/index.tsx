@@ -50,6 +50,15 @@ const Subtitle = styled.h3`
 	margin-bottom: 25px;
 `;
 
+const Footer = styled.p`
+	margin-top: 25px;
+`;
+
+const FooterLink = styled.a`
+	color: #ffffff;
+	text-decoration: underline;
+`;
+
 const Ul = styled.ul`
 	display: flex;
 	flex-direction: column;
@@ -113,6 +122,13 @@ const Home: NextPage = () => {
 			<Ul role="list">
 				{pages}
 			</Ul>
+
+			<Footer>
+				sussy code at{' '}
+				<NextLink href="https://github.com/hackerman-rs/hackerman.rs" passHref>
+					<FooterLink>github</FooterLink>
+				</NextLink>
+			</Footer>
 
 		</Main>
 	);
