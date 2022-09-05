@@ -69,7 +69,7 @@ const Link = styled.a`
 // be sure to add yourself here
 const people = [{
 	name: "dean",
-	color: "#eb741a",
+	color: "#ef7d0d",
 	website: "https://dbassett.dev/"
 }, {
 	name: "penple",
