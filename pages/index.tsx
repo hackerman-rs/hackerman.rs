@@ -2,13 +2,21 @@ import type { NextPage } from 'next';
 import NextLink from 'next/link';
 import styled, { keyframes } from 'styled-components';
 
+const Page = styled.div`
+	min-height: 100vh;
+	padding-top: 50px;
+
+	font-size: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+`;
+
 const Main = styled.main`
 	display: flex;
-	font-size: 2em;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: 50px;
 `;
 
 const animatedBg = keyframes`
@@ -50,8 +58,10 @@ const Subtitle = styled.h3`
 	margin-bottom: 25px;
 `;
 
-const Footer = styled.p`
-	margin-top: 25px;
+const Footer = styled.footer`
+	font-size: 0.75em;
+	height: 50px;
+	text-align: center;
 `;
 
 const FooterLink = styled.a`
@@ -104,33 +114,34 @@ const Home: NextPage = () => {
 	));
 
 	return (
-		<Main>
-			{/* eslint-disable-next-line react/jsx-no-target-blank */}
-			<a
-				target="_blank"
-				style={{ textDecoration: 'none' }}
-				href="https://twitter.com/unicode/status/1551714029436936192"
-				rel="noopener"
-			>
-				<Amogus>ඞ</Amogus>
-			</a>
+		<Page>
+			<Main>
+				{/* eslint-disable-next-line react/jsx-no-target-blank */}
+				<a
+					target="_blank"
+					style={{ textDecoration: 'none' }}
+					href="https://twitter.com/unicode/status/1551714029436936192"
+					rel="noopener"
+				>
+					<Amogus>ඞ</Amogus>
+				</a>
 
-			<Subtitle>
-				we are hackermans
-			</Subtitle>
+				<Subtitle>
+					we are hackermans
+				</Subtitle>
 
-			<Ul role="list">
-				{pages}
-			</Ul>
+				<Ul role="list">
+					{pages}
+				</Ul>
 
+			</Main>
 			<Footer>
 				sussy code at{' '}
 				<NextLink href="https://github.com/hackerman-rs/hackerman.rs" passHref>
 					<FooterLink>github</FooterLink>
 				</NextLink>
 			</Footer>
-
-		</Main>
+		</Page>
 	);
 };
 
