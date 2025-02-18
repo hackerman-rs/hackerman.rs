@@ -89,11 +89,11 @@ const Link = styled.a`
 const people = [{
 	name: "dean",
 	color: "#ef7d0d",
-	website: "https://dbassett.dev/"
+	website: "https://urusai.social/@dean"
 }, {
 	name: "penple",
 	color: "#a855f7",
-	website: "https://penple.dev/"
+	website: "https://en.wikipedia.org/wiki/Deepwater_Horizon_oil_spill"
 }, {
 	name: "violet",
 	color: "#ffaaff",
@@ -102,10 +102,6 @@ const people = [{
 	name: "pato",
 	color: "#38fedc",
 	website: "https://pato.gay/"
-}, {
-	name: "matt",
-	color: "#fc4444",
-	website: "https://yokan.me/"	
 }];
 
 const Home: NextPage = () => {
