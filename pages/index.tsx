@@ -95,10 +95,6 @@ const people = [{
 	color: "#a855f7",
 	website: "https://en.wikipedia.org/wiki/Deepwater_Horizon_oil_spill"
 }, {
-	name: "violet",
-	color: "#ffaaff",
-	website: "https://viomck.com/"
-}, {
 	name: "pato",
 	color: "#38fedc",
 	website: "https://pato.gay/"
