@@ -102,6 +102,10 @@ const people = [{
 	name: "pato",
 	color: "#38fedc",
 	website: "https://pato.gay/"
+}, {
+	name: "aberdeener",
+	color: "#000000",
+	website: "https://bentley.pictures/"
 }];
 
 const Home: NextPage = () => {
